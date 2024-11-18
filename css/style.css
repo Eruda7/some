@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+* {
+	font-family: 'Josefin Sans', sans-serif;
+	font-style: normal;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+}
+body {
+	background-color: #f2f2f2;
+}
+h2 {
+	text-align: center;
+	font-size: 96px;
+	color: #0088a2;
+	font-weight: 100;
+	margin: 50px 0;
+}
+/* header  */
+header {
+	background-color: white;
+	margin: 50px 0;
+}
+
+.logo {
+	width: 100%;
+	display: flex;
+	align-items: center;
+
+	justify-content: space-evenly;
+}
+.logo img {
+	width: 200px;
+}
+.logo p {
+	font-size: 52px;
+	line-height: 72px;
+	color: #0088a2;
+}
+header .menu {
+	display: flex;
+	margin-top: 50px;
+	flex-wrap: wrap;
+}
+header .menu li {
+	width: 20%;
+	text-align: center;
+	background-color: #808080;
+}
+header .menu li a {
+	color: white;
+	font-size: 20px;
+	padding: 15px 0;
+	width: 100%;
+	display: block;
+	transition: 0.3s;
+}
+header .menu li a:hover {
+	background-color: #0088a2;
+}
+
+.three_block {
+	display: flex;
+	justify-content: space-between;
+	gap: 100px;
+	margin: 50px 50px;
+}
+.three_block .block {
+	width: 434px;
+	height: 246px;
+	border-radius: 20px;
+	background: url(../images/img-1.jpeg) center / cover no-repeat;
+}
+.three_block .black_bg {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.436);
+	display: flex;
+	align-items: center;
+	color: white;
+	justify-content: center;
+	text-align: center;
+	border-radius: 20px;
+}
+
+.about_app {
+	margin: 10px 0;
+	padding: 20px 30px;
+	background-color: white;
+}
+.about_app h2 {
+	font-weight: 100;
+	margin: 50px 0;
+}
+.about_app .video {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 750px;
+	border-radius: 20px;
+	background: url(../images/video-img.jpeg) center / cover no-repeat;
+	position: relative;
+}
+.about_app .video::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, 0.5); /* Черный фон с прозрачностью */
+	pointer-events: none; /* Отключаем взаимодействие с этим элементом */
+}
+.about_app .video button {
+	border: none;
+	background: none;
+	cursor: pointer;
+	position: relative;
+	z-index: 2;
+}
+.about_app .images_app {
+	display: flex;
+	gap: 10px; /* Отступы между карточками */
+	overflow-x: auto; /* Добавляем горизонтальную прокрутку, если карточки не помещаются */
+	padding: 10px;
+	scrollbar-width: none; /* Для скрытия скроллбара в Firefox */
+}
+.about_app .images_app::-webkit-scrollbar {
+	display: none;
+}
+.about_app .images_app img {
+	min-width: 200px; /* Ширина карточки */
+	flex: 0 0 auto; /* Отключаем растягивание карточек */
+	border: 1px solid #ddd;
+	border-radius: 8px;
+	padding: 15px;
+	background-color: white;
+	box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+.about_app .images_app img:nth-child(2),
+.about_app .images_app img:nth-child(4) {
+	margin-top: 30px;
+}
+.about_project {
+	margin: 10px 0;
+	padding: 50px 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: white;
+}
+.about_project p {
+	font-size: 36px;
+	color: #707070;
+	text-align: center;
+	width: 80%;
+	line-height: 46px;
+}
+.download {
+	margin: 10px 0;
+	padding: 50px 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: white;
+}
+.download .images {
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	margin: 50px 0;
+}
+.download p {
+	font-size: 22px;
+	color: #707070;
+	width: 80%;
+	text-align: center;
+}
+
+/* footer  */
+footer {
+	background-color: #0088a2;
+	padding: 50px 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+footer h2 {
+	color: white;
+	font-weight: 700;
+	margin: 0;
+}
+footer .social_medias {
+	margin: 50px 0;
+	width: 40%;
+	display: flex;
+	justify-content: space-between;
+}
+footer .footer_nav {
+	display: flex;
+	width: 100%;
+	justify-content: space-around;
+	color: white;
+}
+footer .footer_nav h4 {
+	font-size: 50px;
+	font-weight: 100;
+	margin: 40px 0;
+}
+footer .footer_nav p {
+	font-size: 30px;
+	font-weight: 100;
+	text-align: center;
+}
+footer .block_1 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+footer .footer_nav a {
+	color: white;
+}
+
+/* @media */
+
+@media only screen and (max-width: 768px) {
+	h2 {
+		font-size: 40px;
+	}
+
+	.three_block {
+		flex-direction: column;
+		align-items: center;
+	}
+	.logo img {
+		width: 90px;
+	}
+	.logo p {
+		font-size: 20px;
+		margin-left: 10px;
+	}
+	.about_project p {
+		font-size: 16px;
+		line-height: 26px;
+	}
+	.download .images {
+		flex-direction: column;
+	}
+	footer .social_medias {
+		flex-direction: row;
+		align-items: center;
+		width: 100%;
+		justify-content: space-around;
+	}
+	footer .social_medias img {
+		width: 25%;
+	}
+	footer .footer_nav {
+		flex-direction: column;
+	}
+	header .menu li a {
+		padding: 0;
+	}
+	header .three_block {
+		gap: 10px;
+	}
+	.download .images {
+		width: 50%;
+	}
+	.download .images img {
+		margin-top: 20px;
+	}
+	header .three_block .block {
+		width: 100%;
+	}
+}
