@@ -8,7 +8,7 @@ const h1 = document.createElement('h1')
 h1.textContent = 'SLOGAN SLOGAN SLOGAN'
 
 const header_menu = document.createElement('nav')
-const ul_list = document.querySelector('ul')
+const ul_list = document.createElement('ul')
 ul_list.className = 'menu'
 const nav_words = ['Home']
 
